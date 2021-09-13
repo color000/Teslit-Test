@@ -18,4 +18,13 @@ $(function(){
         $(this).removeClass('off');
         $(this).siblings().addClass('off');
       })
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 25,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
 })
