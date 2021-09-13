@@ -127,8 +127,8 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 
 /* 배너 슬라이드 */
 
-.banner_wrap {overflow: hidden; margin-top:15px; text-align: center; width:100%; box-sizing: border-box; }
-.banner_wrap .slick_wrap {display: inline-block; width:100%; height:70px; overflow: hidden; border-radius: 10px; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); isolation:isolate;}
+.banner_wrap {position:relative; border-radius: 10px; overflow: hidden; margin-top:15px; text-align: center; width:100%; box-sizing: border-box; }
+.banner_wrap .slick_wrap {position:relative; display: inline-block; width:100%; height:70px; overflow: hidden; border-radius: 10px; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); isolation:isolate;}
 .banner_wrap .slick_wrap img {width:100%; height:70px; border-radius: 10px;}
 
 /* News */
