@@ -96,7 +96,7 @@ h1.logo a {color:#8FD800;}
 
 /*  */
 
-input[type="checkbox"] {width:24px; height:24px; background:url(../images/check_off.png); vertical-align: middle;}
+input[type="checkbox"] {width:24px; height:24px; background:url(../images/check_off.png); vertical-align: middle; border:0;}
 input[type="checkbox"] + label {vertical-align: middle; font-size:14px; color:#fff; margin-left:8px;}
 input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 
