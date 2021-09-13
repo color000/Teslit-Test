@@ -37,7 +37,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .roboto {font-family: 'Roboto' !important;}
 .Questrial {font-family: 'Questrial' !important;}
 
-.wrap {position:relative; height:100%; padding-bottom:70px; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%); overflow: hidden;}
+.wrap {position:relative; min-height:100%; height:auto; padding-bottom:70px; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%); overflow: hidden;}
 
 .container {padding:0 20px;}
 
@@ -146,7 +146,9 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .new_wrap .news_slide .news_content {flex:100; height:70px; vertical-align: middle; margin-left:15px;}
 .new_wrap .news_slide .news_content p {color:#fff; font-size:14px; line-height:16.41px;}
 .new_wrap .news_slide .news_content span {display: block; font-size:12px; margin-top:6px; color:#999;}
-
+.swiper-slide {width: 84%;}
+.swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
+.swiper-wrapper {display: -ms-flexbox;}
 
 /* 로그인 페이지 */
 
@@ -186,6 +188,14 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .face_img .img_box img {width:100%; height:100%; border-radius:50%; overflow: hidden;}
 .face_img .img_box a.camera {position: absolute; bottom:0; right:0; width:30px; height:30px; display:inline-block; background:url(../images/ico_camera.png)}
 
-.swiper-slide {width: 84%;}
-.swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
-.swiper-wrapper {display: -ms-flexbox;}
+/* 달력 */
+
+.calendar_wrap {margin:25px -20px 0; height:80px; background:rgba(255, 255, 255, 0.1)}
+
+/* 명 모집 */
+.day_info_wrap {margin:10px 0 0; }
+.day_info_wrap ul li {padding:20px 15px; background:#ADCE74; border-radius: 10px; min-height:150px;}
+.day_info_wrap ul li:nth-child(2n) {background:#FF4C29;}
+.day_info_wrap ul li:nth-child(3n) {background:#10316B;}
+.day_info_wrap ul li:nth-child(4n) {background:#ADCE74;}
+.day_info_wrap ul li + li {margin-top:10px;}
