@@ -22,7 +22,7 @@ legend { height:0; width:0; display:block; text-indent:-9999em; }
 label { cursor:pointer; }
 button::-moz-focus-inner { padding:0; border:0; }
 input {-webkit-appearance: none; -webkit-border-radius: 0;}
-input::placeholder {color:rgba(255, 255, 255, 0.3); font-size:14px;}
+input::placeholder {color:rgba(255, 255, 255, 0.3); font-size:15px;}
 input:focus {outline: none;}
 
 select {-webkit-appearance:none; /* for chrome */ -moz-appearance:none; /*for firefox*/ appearance:none; box-sizing: border-box; background:url(../images/select_bg.png) no-repeat right 16px center !important;}
@@ -80,7 +80,7 @@ h1.logo a {color:#8FD800;}
 .input_box > .btn_box {margin-top:10px;}
 .btn_box.two {display: flex;}
 .btn_box.two > * + * {margin-left:10px;}
-.btn_box select {text-align: left; padding-left:15px; font-size:14px;}
+.btn_box select {text-align: left; padding-left:15px; font-size:15px;}
 
 .chk_wrap {margin-top:30px;}
 .chk_wrap ul {padding:14px 0 0 20px; border-top:1px solid rgba(255, 255, 255, 0.15); margin-top:15px;}
@@ -97,7 +97,7 @@ h1.logo a {color:#8FD800;}
 /*  */
 
 input[type="checkbox"] {width:24px; height:24px; background:url(../images/check_off.png); vertical-align: middle; border:0;}
-input[type="checkbox"] + label {vertical-align: middle; font-size:14px; color:#fff; margin-left:8px;}
+input[type="checkbox"] + label {vertical-align: middle; font-size:15px; color:#fff; margin-left:8px;}
 input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 
 
@@ -143,7 +143,7 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .new_wrap .news_slide .news_img_box {display: inline-block; width:70px; height:70px; border-radius: 5px; overflow: hidden; vertical-align: middle;}
 .new_wrap .news_slide .news_img_box img {width:100%; height:100%;}
 .new_wrap .news_slide .news_content {display: inline-block; width:160px; height:70px; vertical-align: middle; margin-left:15px;}
-.new_wrap .news_slide .news_content p {color:#fff; font-size:14px; line-height:16.41px;}
+.new_wrap .news_slide .news_content p {color:#fff; font-size:15px; line-height:16.41px;}
 .new_wrap .news_slide .news_content span {display: block; font-size:12px; margin-top:6px; color:#999;}
 
 
@@ -155,15 +155,15 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .form_box {margin-top:50px;}
 .form_box .input_box {display: block;}
 .form_box .input_box + .input_box {margin-top:20px;}
-.form_box .input_box label {display: block; margin-bottom:10px; color:#fff; font-weight: 400; font-size:14px;}
-.form_box .input_box input {width:100%; height:45px; border:1px solid rgba(255, 255, 255, 0.2); background:transparent; padding:0 15px; color:#fff; box-sizing: border-box;}
+.form_box .input_box label {display: block; margin-bottom:10px; color:#fff; font-weight: 400; font-size:15px;}
+.form_box .input_box input {width:100%; height:45px; border:1px solid rgba(255, 255, 255, 0.2); background:transparent; padding:0 15px; color:#fff; box-sizing: border-box; font-size:15px;}
 .form_box .input_box select {height:45px; padding:0 0 0 15px;}
 
 .in_form {margin-top:22px; display: flex; justify-content: space-between;}
 .in_form a {color:#fff; font-size:14px;}
 
 .team_use {margin-top:90px; display: flex; justify-content: space-between;}
-.team_use a {color:#999; font-size:14px; border-bottom:1px solid #999; padding-bottom:2px;}
+.team_use a {color:#999; font-size:15px; border-bottom:1px solid #999; padding-bottom:2px;}
 
 /* 회원가입 절차 */
 
@@ -178,7 +178,7 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .progress ul li.on {background:#fff;}
 .progress ul li + li {margin-left:8px;}
 
-.text_box p {coloR:#fff; font-size:14px; line-height:20.27px; }
+.text_box p {coloR:#fff; font-size:15px; line-height:20.27px; }
 
 .face_img {margin:10px 0 15px; text-align: center;}
 .face_img .img_box {display:inline-block; position:relative; width:84px; height:84px; border-radius: 50%;}
