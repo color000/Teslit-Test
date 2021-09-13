@@ -15,11 +15,7 @@ $(function(){
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
         spaceBetween: 25,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-          autoplay: {
+        autoplay:{
           delay: 2500,
           disableOnInteraction: false,
         },
