@@ -299,7 +299,7 @@ input[type="checkbox"].input__on-off {display: none; width:auto; height:auto;}
 .news_pic li {padding:20px 0; border-bottom:1px solid rgba(255, 255, 255, 0.2);}
 .news_pic li:first-child {padding-top:0;}
 
-.news_pic li a.pic_flex {display: flex; display: -ms-flexbox; display: -webkit-flex; box-sizing: border-box; width:100%; align-items: center;}
+.news_pic li a.pic_flex {display: flex; display: -ms-flexbox; display: -webkit-flex; box-sizing: border-box; width:100%; align-items:flex-start;}
 .news_pic li a.pic_flex .right {margin-left:12px;}
 .news_pic li a.pic_flex .right p.tit {font-size:16px; font-weight: 500; color:#fff; line-height:24px; overflow:hidden; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; width:100%;}
-.news_pic li a.pic_flex .right span {font-size:14px; color:rgba(255, 255, 255, 0.5); line-height:20px; display: block; margin-top:10px; overflow:hidden; display: -webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; width:100%;}
+.news_pic li a.pic_flex .right span {font-size:14px; color:rgba(255, 255, 255, 0.5); line-height:20px; display: block; margin-top:10px; overflow:hidden; display: -webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; width:100%;}
