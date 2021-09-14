@@ -57,4 +57,20 @@ $(function(){
       });
 
 
+      $('.up_down_wrap .up_down_click').click(function(){
+
+        const open = $(this).next('.up_down').height();
+        const el = $(this).next('.up_down'),
+            curHeight = el.height(),
+            autoHeight = el.css('height', 'auto').height();
+     
+        if( open === 0 ){
+            el.height(curHeight).animate({height: autoHeight}, 100);
+            $(this).removeClass('up');
+        }else{
+            el.animate({height: 0}, 100);
+            $(this).addClass('up');
+        }
+    });
+
 })
