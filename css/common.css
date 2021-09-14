@@ -39,7 +39,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .roboto {font-family: 'Roboto' !important;}
 .Questrial {font-family: 'Questrial' !important;}
 
-.wrap {position:relative; min-height:100%; height:auto; padding-bottom:70px; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%); overflow: hidden;}
+.wrap {position:relative; min-height:100%; height:auto; padding-bottom:70px; overflow: hidden;}
 
 header {height:50px;}
 
