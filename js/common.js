@@ -21,22 +21,33 @@ $(function(){
         },
       });
 
-
       // 사이드 메뉴 오픈
       $('.sidemenu_open').click(function () {
         $('.dim').show();
         $('.home_sidemenu').addClass('modal_open');
-        $('body').addClass('modal_open')
+        $('body').addClass('modal_open');
       });
 
       $('.popup_close').click(function () {
         $('.dim').hide();
         $('.home_sidemenu').removeClass('modal_open');
+        $('body').removeClass('modal_open');
       });
 
       $('.dim').click(function(){
       	$(".dim").hide();
         $('.home_sidemenu').removeClass('modal_open');
+        $('body').removeClass('modal_open');
       });
+
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+          $(".gnb_wrap").addClass("scrolltop");
+        } else {
+          $(".gnb_wrap").removeClass("scrolltop");
+        }
+      });
+
 
 })

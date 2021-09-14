@@ -39,6 +39,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .wrap {position:relative; min-height:100%; height:auto; padding-bottom:70px; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%); overflow: hidden;}
 
+header {height:50px;}
+
 .container {padding:0 20px;}
 
 footer {position: fixed; bottom:0; left:0; width:100%; height:55px; padding:0 25px; box-sizing: border-box; background:#18162D;}
@@ -63,7 +65,7 @@ footer ul li a.user.on {background-image:url(../images/user_on.png)}
 /*뒤 검은 배경*/
 .dim {display:none; position:fixed; width:100%; height:100%; top:0; left:0; right:0; background:#000; opacity:0.5; z-index:1000}
 
-body.modal_open {overflow: hidden;}
+body.modal_open {overflow: hidden; position: fixed;}
 
 /* 팝업(height 값 임의로) */
 .home_sidemenu {padding:64px 20px 76px !important; overflow-y: scroll; box-sizing: border-box; top:0; background: #131245; width: 80%; height:100%; margin: 0; padding: 0; transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1); position: fixed; right:-100%; text-align: left; z-index:9999;}
@@ -121,7 +123,8 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 
 /* 로고, GNB */
 
-.gnb_wrap {position:relative; height:50px;}
+.gnb_wrap {position:fixed; height:50px; right:0; width:100%; z-index: 999;}
+.gnb_wrap.scrolltop {background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%);}
 .gnb_wrap .right_box {display:flex; display: -webkit-box; display: -ms-flexbox; position:absolute; top:50%; transform: translateY(-50%); right:20px; height:24px; justify-content: flex-end;}
 .gnb_wrap .right_box span {display: inline-block; width:24px; height:24px;}
 .gnb_wrap .right_box span a {display: inline-block; width:100%; height:100%; background:url(../images/Search.png) no-repeat center;}
