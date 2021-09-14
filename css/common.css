@@ -99,6 +99,7 @@ h1.logo a {color:#8FD800;}
 .btn3 {display: inline-block; width:70px; height:45px; line-height:45px; background:#8FD800; color:#060510; text-align: center; font-size:15px;}
 .btn3.type2 {border-radius:2px; background:rgba(255, 255, 255, 0.15); color:#fff; height:38px; line-height:38px;}
 
+.btn4 {display: inline-block; padding:10px 20px; border-radius: 5px; border:1px solid rgba(255, 255, 255, 0.3); color:#fff; font-size:15px; }
 
 /* 레이 아웃 */
 
@@ -257,10 +258,16 @@ input[type="checkbox"].input__on-off {display: none; width:auto; height:auto;}
 
 /* 공지사항 content */
 
-.notice_wrap {color:#fff;}
+.notice_wrap {}
 
 /* 업 다운 */
-.up_down_wrap {position:relative; border-bottom:1px solid rgba(255, 255, 255, 0.2); margin:0 -20px;}
+.up_down_wrap {position:relative; border-bottom:1px solid rgba(255, 255, 255, 0.2); margin:0 -20px; font-size:15px;}
+.up_down_wrap p.tit {color:#fff; line-height:22px; margin-bottom:10px;}
+.up_down_wrap p.tip {color:#fff; line-height:22px;}
+.up_down_wrap span.date {color:rgba(255, 255, 255, 0.5); font-size:12px;}
+.up_down_wrap span.content {display: block; color:#8FD800; line-height:22px; margin:20px 0; }
+.up_down_wrap a {margin-top:20px;}
+
 .up_down {background:rgba(255, 255, 255, 0.08); overflow: hidden; transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1); padding:0 20px; box-sizing: border-box;}
 .up_down.up {height:0px;}
 .up_down .up_down_box {padding:20px 0;}
