@@ -230,7 +230,8 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 /* 알림설정 */
 
 .arm_wrap {margin-top:10px;}
-.arm_wrap ul li {position:relative; display: flex; display:-webkit-box; display: -webkit-flex; height:55px; box-sizing: border-box; align-items:center; justify-content: space-between; color:#fff; font-size:15px; padding:16px 0; border-bottom:1px solid rgba(255, 255, 255, 0.15);}
+.arm_wrap ul li {position:relative; display: flex; display:-webkit-box; display: -webkit-flex; height:55px; box-sizing: border-box; align-items:center; justify-content: space-between; padding:16px 0; border-bottom:1px solid rgba(255, 255, 255, 0.15);}
+.arm_wrap ul li span {color:#fff; font-size:15px;}
 .arm_wrap ul li a.arrow_r {position:absolute; width:100%; height:100%; background:url(../images/arrow_r.png) no-repeat top 50% right 10px / 7px 12px;}
 
 /* 스위치 */
