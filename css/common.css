@@ -41,8 +41,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .wrap {position:relative; padding-bottom:70px; overflow: hidden; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%);}
 
-header {height:50px; position: fixed; width:100%; /* 사파리 브라우저 지원 */ z-index: 999;}
-header.scrolltop {background:#0D0C2C;}
+header {height:50px; position: absolute; top:0; left:0; width:100%; /* 사파리 브라우저 지원 */ z-index: 999;}
+header.scrolltop {background:#0D0C2C; position:fixed;}
 
 .container {padding:0 20px;}
 
