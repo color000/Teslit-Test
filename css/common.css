@@ -26,7 +26,7 @@ input::placeholder {color:rgba(255, 255, 255, 0.3); font-size:15px;}
 input.op50::placeholder {color:rgba(255, 255, 255, 0.5); font-size:15px;}
 input:focus {outline: none;}
 
-select {-webkit-appearance:none; /* for chrome */ -moz-appearance:none; /*for firefox*/ appearance:none; box-sizing: border-box; background:url(../images/select_bg.png) no-repeat right 16px center !important;}
+select {-webkit-appearance:none; /* for chrome */ -moz-appearance:none; /*for firefox*/ appearance:none; box-sizing: border-box; background:url(../images/select_bg.png) no-repeat right 16px center !important; -webkit-border-radius:0; -moz-border-radius:0;}
 select:focus {outline: none;}
 select::-ms-expand{display:none;/*for IE10,11*/}
 
@@ -257,19 +257,32 @@ input[type="checkbox"].input__on-off {display: none; width:auto; height:auto;}
 
 
 /* 공지사항 content */
-
-.notice_wrap {}
-
-/* 업 다운 */
 .up_down_wrap {position:relative; border-bottom:1px solid rgba(255, 255, 255, 0.2); margin:0 -20px; font-size:15px;}
 .up_down_wrap p.tit {color:#fff; line-height:22px; margin-bottom:10px;}
 .up_down_wrap p.tip {color:#fff; line-height:22px;}
 .up_down_wrap span.date {color:rgba(255, 255, 255, 0.5); font-size:12px;}
 .up_down_wrap span.content {display: block; color:#8FD800; line-height:22px; margin:20px 0; }
 .up_down_wrap a {margin-top:20px;}
-
 .up_down {background:rgba(255, 255, 255, 0.08); overflow: hidden; transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1); padding:0 20px; box-sizing: border-box;}
 .up_down.up {height:0px;}
 .up_down .up_down_box {padding:20px 0;}
 .up_down_click {padding:16px 50px 10px 20px; background:url(../images/arrow_up.png) no-repeat right 20px center;}
 .up_down_click.up {background-image:url(../images/arrow_down.png)}
+
+/* 자유게시판 */
+
+.free_board li.list {padding:15px 20px; border-bottom:1px solid rgba(255, 255, 255, 0.2); margin:0 -20px;}
+.free_board li a {display:block;}
+.free_board li a p.tit {color:#fff; font-size:15px; line-height:22px;}
+.free_board li a span.date {display: flex; display: -webkit-flex; display: -ms-flexbox; justify-content: space-between; margin-top:10px; color:rgba(255, 255, 255, 0.5); font-size:12px;}
+.free_board li a span.date .date_left {display: flex; display: -webkit-flex; display: -ms-flexbox;}
+.free_board li a span.date .date_left li + li:before {content:''; display: inline-block; margin:0 5px; width:1px; height:8px; background:rgba(255, 255, 255, 0.5);}
+
+/* 자유게시판 읽기 */
+.board_read_wrap {margin-top:10px;}
+.board_read_wrap p.tit {font-size:24px; color:#fff; line-height:35px; margin-bottom:10px;}
+.board_read_wrap span.date {font-size:12px; color:rgba(255, 255, 255, 0.5);}
+.board_read_wrap .content {margin-top:26px; padding-right:10px;}
+.board_read_wrap .content p {font-size:15px; color:#fff; line-height:22px;}
+.board_read_wrap .btn_wrap {position: fixed; bottom:20px; right: 20px;}
+.board_read_wrap .btn_wrap a + a {margin-left:16px;}
