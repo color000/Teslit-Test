@@ -23,6 +23,7 @@ label { cursor:pointer; }
 button::-moz-focus-inner { padding:0; border:0; }
 input {-webkit-appearance: none; -webkit-border-radius: 0;}
 input::placeholder {color:rgba(255, 255, 255, 0.3); font-size:15px;}
+input.op50::placeholder {color:rgba(255, 255, 255, 0.5); font-size:15px;}
 input:focus {outline: none;}
 
 select {-webkit-appearance:none; /* for chrome */ -moz-appearance:none; /*for firefox*/ appearance:none; box-sizing: border-box; background:url(../images/select_bg.png) no-repeat right 16px center !important;}
@@ -60,7 +61,8 @@ footer ul li a.user.on {background-image:url(../images/user_on.png)}
 
 .media_flex {display: flex;}
 .media_flex input {flex:100;}
-.media_flex input + a.check {height:45px; width:100px; background:rgba(255, 255, 255, 0.15); text-align: center; line-height:45px; color:#fff; font-size:15px; margin-left:10px;}
+.media_flex input + a {margin-left:10px;}
+.media_flex input + a.check {height:45px; width:100px; background:rgba(255, 255, 255, 0.15); text-align: center; line-height:45px; color:#fff; font-size:15px;}
 
 /*뒤 검은 배경*/
 .dim {display:none; position:fixed; width:100%; height:100%; top:0; left:0; right:0; background:#000; opacity:0.5; z-index:1000}
@@ -93,6 +95,10 @@ h1.logo a {color:#8FD800;}
 .btn2 {display: block; padding:14px 0; width:100%; color:#fff; border:1px solid #fff; background:transparent; text-align:center; box-sizing: border-box; font-size:15px;}
 .btn2.co1 {border:1px solid #FAE100; color: #FAE100;}
 .btn2.off {border:1px solid rgba(255, 255, 255, 0.2);}
+
+.btn3 {display: inline-block; width:70px; height:45px; line-height:45px; background:#8FD800; color:#060510; text-align: center; font-size:15px;}
+.btn3.type2 {border-radius:2px; background:rgba(255, 255, 255, 0.15); color:#fff; height:38px; line-height:38px;}
+
 
 /* 레이 아웃 */
 
@@ -220,3 +226,34 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .day_info_wrap ul li:nth-child(3n) {background:#10316B;}
 .day_info_wrap ul li:nth-child(4n) {background:#ADCE74;}
 .day_info_wrap ul li + li {margin-top:10px;}
+
+/* 알림설정 */
+
+.arm_wrap {margin-top:10px;}
+.arm_wrap ul li {position:relative; display: flex; display:-webkit-box; display: -webkit-flex; height:55px; box-sizing: border-box; align-items:center; justify-content: space-between; color:#fff; font-size:15px; padding:16px 0; border-bottom:1px solid rgba(255, 255, 255, 0.15);}
+.arm_wrap ul li a.arrow_r {position:absolute; width:100%; height:100%; background:url(../images/arrow_r.png) no-repeat top 50% right 10px / 7px 12px;}
+
+/* 스위치 */
+input[type="checkbox"].input__on-off {display: none; width:auto; height:auto;}
+.label__on-off {overflow: hidden; position: relative; display: inline-block; width: 44px; height: 26px; -webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px; background-color: rgba(255, 255, 255, 0.3); cursor: pointer; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s;}
+.label__on-off > * {vertical-align: sub; -webkit-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s;}
+.label__on-off .marble {position: absolute; top: 50%; transform: translateY(-50%); left: 2px; display: block; width: 22px; height: 22px; background-color: #060510; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3); box-shadow: 0 0 10px rgba(0, 0, 0, .3);}
+.label__on-off .on {display: none;padding-left: 12px;}
+.label__on-off .off {padding-left: 30px; line-height: 25px;}
+.input__on-off:checked + .label__on-off {background-color: #8FD800;}
+.input__on-off:checked + .label__on-off .on {display: inline-block;}
+.input__on-off:checked + .label__on-off .off {display: none;}
+.input__on-off:checked + .label__on-off .marble {left: 19px;}
+/*
+
+
+/* 키워드 알림 */
+
+/* 검색어를 입력해주세요. */
+.search_wrap {margin-top:15px;}
+
+
+/* 검색어 삭제 버튼 */
+.search_add_wrap {margin-top:20px;}
+.search_add_wrap ul li {display: flex; display: -ms-flexbox; display: -webkit-flex; justify-content: space-between; align-items: center; height:55px; border-bottom:1px solid rgba(255, 255, 255, 0.15); padding:8px 0; box-sizing: border-box;}
+.search_add_wrap ul li span {color:#fff; font-size:15px;}
