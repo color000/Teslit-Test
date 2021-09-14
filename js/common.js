@@ -46,16 +46,6 @@ $(function(){
         $('body').removeClass('modal_open');
       });
 
-      if (document.body.scrollTop == 0) {
-        var top = document.documentElement.scrollTop;
-        $("header").addClass("scrolltop");
-        } else {
-        var top = document.body.scrollTop;
-        $("header").removeClass("scrolltop");
-        }
-
-
-
       $('.up_down_wrap .up_down_click').click(function(){
 
         const open = $(this).next('.up_down').height();
