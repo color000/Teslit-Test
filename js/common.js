@@ -20,4 +20,22 @@ $(function(){
           disableOnInteraction: false,
         },
       });
+
+
+      // 사이드 메뉴 오픈
+      $('.sidemenu_open').click(function () {
+        $('.dim').show();
+        $('.home_sidemenu').addClass('modal_open');
+      });
+
+      $('.popup_close').click(function () {
+        $('.dim').hide();
+        $('.home_sidemenu').removeClass('modal_open');
+      });
+
+      $('.dim').click(function(){
+      	$(".dim").hide();
+        $('.home_sidemenu').removeClass('modal_open');
+      });
+
 })
