@@ -46,15 +46,14 @@ $(function(){
         $('body').removeClass('modal_open');
       });
 
-      // 스크롤 되면 header 색상 들어가게
-      $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 1) {
-          $("header").addClass("scrolltop");
+      if (document.body.scrollTop == 0) {
+        var top = document.documentElement.scrollTop;
+        $("header").addClass("scrolltop");
         } else {
-          $("header").removeClass("scrolltop");
+        var top = document.body.scrollTop;
+        $("header").removeClass("scrolltop");
         }
-      });
+
 
 
       $('.up_down_wrap .up_down_click').click(function(){
@@ -71,6 +70,6 @@ $(function(){
             el.animate({height: 0}, 100);
             $(this).addClass('up');
         }
-    });
+      });
 
 })
