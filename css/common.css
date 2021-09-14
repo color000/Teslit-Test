@@ -284,5 +284,5 @@ input[type="checkbox"].input__on-off {display: none; width:auto; height:auto;}
 .board_read_wrap span.date {font-size:12px; color:rgba(255, 255, 255, 0.5);}
 .board_read_wrap .content {margin-top:26px; padding-right:10px;}
 .board_read_wrap .content p {font-size:15px; color:#fff; line-height:22px;}
-.board_read_wrap .btn_wrap {position: fixed; bottom:20px; right: 20px;}
+.board_read_wrap .btn_wrap {position: fixed; left:0; bottom:0; width:100%; border-top:1px solid rgba(255, 255, 255, 0.15); padding:20px; box-sizing: border-box; text-align: right; background:#0D0C2C; z-index: 9;}
 .board_read_wrap .btn_wrap a + a {margin-left:16px;}
