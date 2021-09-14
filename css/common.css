@@ -41,7 +41,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .wrap {position:relative; padding-bottom:70px; overflow: hidden; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%);}
 
-header {height:50px;}
+header {height:50px; position: fixed; width:100%; /* 사파리 브라우저 지원 */ z-index: 999;}
 
 .container {padding:0 20px;}
 
@@ -131,8 +131,8 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 
 /* 로고, GNB */
 
-.gnb_wrap {position: absolute; top:0; height:50px; right:0; width:100%; z-index: 999;}
-.gnb_wrap.scrolltop {background:#0D0C2C; position:fixed; top:0; left:0;}
+.gnb_wrap {position: absolute; top:0; height:50px; right:0; width:100%; z-index: 99999;}
+header.scrolltop {background:#0D0C2C;}
 .gnb_wrap .right_box {display:flex; display: -webkit-box; display: -ms-flexbox; position:absolute; top:50%; transform: translateY(-50%); right:20px; height:24px; justify-content: flex-end;}
 .gnb_wrap .right_box span {display: inline-block; width:24px; height:24px;}
 .gnb_wrap .right_box span a {display: inline-block; width:100%; height:100%; background:url(../images/Search.png) no-repeat center;}

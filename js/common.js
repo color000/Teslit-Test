@@ -49,10 +49,10 @@ $(function(){
       // 스크롤 되면 header 색상 들어가게
       $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
-          $(".gnb_wrap").addClass("scrolltop");
+        if (scroll >= 1) {
+          $("header").addClass("scrolltop");
         } else {
-          $(".gnb_wrap").removeClass("scrolltop");
+          $("header").removeClass("scrolltop");
         }
       });
 
