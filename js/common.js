@@ -26,6 +26,7 @@ $(function(){
       $('.sidemenu_open').click(function () {
         $('.dim').show();
         $('.home_sidemenu').addClass('modal_open');
+        $('body').addClass('modal_open')
       });
 
       $('.popup_close').click(function () {
