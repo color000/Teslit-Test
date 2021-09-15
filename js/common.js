@@ -1,5 +1,24 @@
 $(function(){
       
+    // 위로 올라가는 버튼
+      $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.up_btn_wrap').fadeIn();
+            } else {
+                $('.up_btn_wrap').fadeOut();
+            }
+        });
+        
+        $(".up_btn_wrap").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+      });
+
+
       // 메인 배너
       $('.slick_wrap').slick({
         slidesToShow: 1,

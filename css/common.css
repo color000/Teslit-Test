@@ -37,7 +37,7 @@ select::-ms-expand{display:none;/*for IE10,11*/}
 
 /* html5 */
 object, del, sub, var { margin:0; padding:0; }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
 
 .notosans {font-family: 'Noto Sans KR' !important;}
 .roboto {font-family: 'Roboto' !important;}
@@ -45,10 +45,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .wrap {position:relative;  height:100%; min-height:100vh; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%);}
 
+.up_btn_wrap {position: fixed; z-index: 999; bottom:70px; right:20px; background: #0D0C2C; border-radius: 50%; box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.149);}
+.up_btn_wrap a {display: block; width:50px; height:50px; background:url(../images/arrow-up.png) no-repeat center}
+
 header {height:50px; position: absolute; top:0; left:0; width:100%; /* 사파리 브라우저 지원 */ z-index: 999;}
 header.scrolltop {background:#0D0C2C; position:fixed;}
 
-.container {padding:0 20px; margin-bottom:70px;}
+.container {padding:0 20px; padding-bottom:50px;}
 
 footer {position: fixed; bottom:0; left:0; width:100%; height:55px; padding:0 25px; box-sizing: border-box; background:#18162D;}
 footer ul {width:100%; height:100%; display: flex; align-items: center; justify-content: space-between;}
@@ -244,19 +247,17 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 /* 명 모집 */
 .day_info_wrap {margin:10px 0 0; }
 .day_info_wrap ul li {padding:20px 15px; background:#ADCE74; border-radius: 10px; min-height:150px;}
-.day_info_wrap ul li:nth-child(2n) {background:#FF4C29;}
-.day_info_wrap ul li:nth-child(3n) {background:#10316B;}
-.day_info_wrap ul li:nth-child(4n) {background:#ADCE74;}
+.day_info_wrap ul li.bg1 {background:#ADCE74;}
+.day_info_wrap ul li.bg2 {background:#FF4C29;}
+.day_info_wrap ul li.bg3 {background:#10316B;}
 .day_info_wrap ul li + li {margin-top:10px;}
 
 /* 툴팁 박스 */
 .day_info_wrap .ico_box [data-tooltip-text]:hover {position:relative;}
 .day_info_wrap .ico_box [data-tooltip-text]:hover:before {content:''; display: inline-block; width:0; height:0; border-left:10px solid #fff; border-bottom:10px solid transparent; position:absolute; bottom:100%; left:10px;}
 .day_info_wrap .ico_box [data-tooltip-text]:hover:after {content:attr(data-tooltip-text); min-width:59px; position:absolute; bottom:130%; left:0; padding:5px 12px; background-color:rgba(255,255,255,1); color:#000; font-size:14px;}
-/*  */
 .day_info_wrap .ico_box span.ball {display: inline-block; width:24px; height:24px; background:url(../images/ico_ball_pink.png) no-repeat center;}
 .day_info_wrap .ico_box span.ball + span.ball {margin-left:8px;}
-
 /* 이미지 */
 .day_info_wrap .ico_box span.ball.pink {background-image: url(../images/ico_ball_pink.png);}
 .day_info_wrap .ico_box span.ball.yellow {background-image: url(../images/ico_ball_yellow.png);}
@@ -264,8 +265,16 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .day_info_wrap .ico_box span.ball.blue {background-image: url(../images/ico_ball_blue.png);}
 .day_info_wrap .ico_box span.ball.black {background-image: url(../images/ico_ball_black.png);}
 
+/* 명 모집 콘텐츠  */
+.day_info_wrap .info_content strong.tit {font-weight: 500; font-size:16px; display: block; margin-top:10px; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color:#fff;}
+.day_info_wrap .info_content span {margin-top:10px; color:#fff; font-size:14px; display: block;}
+.day_info_wrap .info_content span.location {margin-top:13px;}
+.day_info_wrap .info_content span.location:before {content:'';display:inline-block; width:18px; height:18px; background:url(../images/map_pin.png); vertical-align: -3px; margin-right:3px;}
 
-
+.day_info_wrap .user_box {margin-top:10px; display:flex; display: -webkit-flex; display: -ms-flexbox; justify-content: space-between; align-items: center; font-size:14px; color:#fff;}
+.day_info_wrap .user_box .left img + img {margin-left:-7px;}
+.day_info_wrap .user_box .person:before {content:'';display:inline-block; width:12px; height:14px; background:url(../images/ico_person.png) no-repeat center; vertical-align: -2px; margin-right:6px;}
+.day_info_wrap .user_box .person .total:before {content:'/'; font-size:14px; color:#fff; margin:0 4px 0 1px;}
 /* 알림설정 */
 
 .arm_wrap {margin-top:10px;}
