@@ -5,7 +5,7 @@
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, button, p, blockquote, th, td, select {font-family:'Roboto' ,'Noto Sans KR', 'sans-serif' !important; margin:0; padding:0;-webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 html { width:100%; box-sizing: border-box;}
 body {}
-html, body {background-color:#100F38; }
+html, body {background-color:#100F38;}
 body, code {width:100%; min-width:320px; line-height:1; -webkit-text-size-adjust:none; position: relative;}
 code { background:none; display:block; }
 ul li { list-style:none; }
@@ -31,6 +31,8 @@ input:focus {outline: none;}
 select {-webkit-appearance:none; /* for chrome */ -moz-appearance:none; /*for firefox*/ appearance:none; box-sizing: border-box; background:url(../images/select_bg.png) no-repeat right 16px center !important; -webkit-border-radius:0; -moz-border-radius:0;}
 select:focus {outline: none;}
 select::-ms-expand{display:none;/*for IE10,11*/}
+
+.target{ -webkit-backface-visibility:hidden; -webkit-transform:translateZ(0); -webkit-transform:translate3d(0, 0, 0); }
 
 /* html5 */
 object, del, sub, var { margin:0; padding:0; }
