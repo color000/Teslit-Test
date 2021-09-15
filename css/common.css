@@ -221,15 +221,17 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 
 /* 달력 */
 
-.calendar_wrap {position:relative; margin:25px -20px 0; height:80px; padding:10px 35px 15px; box-sizing: border-box; background:rgba(255, 255, 255, 0.1);}
-.calendar {white-space: nowrap; overflow:hidden;}
-.calendar li {display: inline-block; text-align: center;}
-.calendar li + li {margin-left:16px;}
-.calendar_wrap a.prev {position:absolute; top:50%; transform: translateY(-50%); left:14px; width:8px; height:12px; background:url(../images/arrow_l_calendar.png) no-repeat center;}
-.calendar_wrap a.next {position:absolute; top:50%; transform: translateY(-50%); right:14px; width:8px; height:12px; background:url(../images/arrow_r_calendar.png) no-repeat center;}
+.calendar_wrap {position:relative; margin:25px -20px 0; height:80px; padding:10px 35px 15px; box-sizing: border-box; background:rgba(255, 255, 255, 0.1); overflow: hidden;}
+.calendar_wrap .swiper-pointer-events {overflow: hidden;}
+.calendar_wrap .swiper-button-prev:after {width:8px; height:12px; background:url(../images/arrow_l_calendar.png) no-repeat; font-size:0;}
+.calendar_wrap .swiper-button-next:after {width:8px; height:12px; background:url(../images/arrow_r_calendar.png) no-repeat; font-size:0;}
+.calendar_wrap .swiper-wrapper {text-align: center;}
+.calendar_wrap .swiper-slide span.day {display: block; text-align: center; color:rgba(255, 255, 255, 0.5); font-size:12px; text-align: center; margin-bottom:10px;}
+.calendar_wrap .swiper-slide span.date {text-align: center; display: inline-block; width:100%; font-size:15px; color:#fff; vertical-align: middle; line-height:32px;}
+.calendar_wrap .swiper-slide span.date.on {width:32px; height:32px; background:#8FD800; margin:0 auto; line-height:31px; border-radius: 50%; color:#060510; font-weight: 700; font-size:16px;}
 
 
-.calendar li dl dt {font-size:12px; color:rgba(255, 255, 255, 0.5);}
+.calendar li dl dt {font-size:12px; height:17px; line-height:17px; color:rgba(255, 255, 255, 0.5);}
 .calendar li dl dd {font-size:15px; color:#fff; height:32px; line-height:32px; margin-top:10px;}
 .calendar li dl dd.on {background:#8FD800; width:32px; height:32px; border-radius: 50%; color:#060510; font-weight: 700; font-size:16px; line-height:32px; margin-top:9px;}
 

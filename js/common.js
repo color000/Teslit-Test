@@ -15,6 +15,13 @@ $(function(){
         $(this).siblings().addClass('off');
       })
 
+      // 남성, 여성 클릭시 on, off 
+      $('.calendar_swiper .date').click(function(){
+        $('.date').removeClass('on');
+        $(this).addClass('on');
+      })
+
+
       // News
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
@@ -70,5 +77,27 @@ $(function(){
             $(this).addClass('up');
         }
       });
+
+
+      var swiper = new Swiper('.calendar_swiper', {
+        slidesPerView: 7,
+        direction: getDirection(),
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 10 ? 'vertical' : 'horizontal';
+
+        return direction;
+      }
 
 })
