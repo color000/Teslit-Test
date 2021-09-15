@@ -224,6 +224,8 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .calendar_wrap {position:relative; margin:25px -20px 0; height:80px; padding:10px 35px 15px; box-sizing: border-box; background:rgba(255, 255, 255, 0.1); }
 .calendar_swiper {overflow: hidden;}
 .calendar_wrap .swiper-pointer-events {overflow: hidden;}
+.calendar_wrap .swiper-button-prev {left:5px;}
+.calendar_wrap .swiper-button-next {right:5px;}
 .calendar_wrap .swiper-button-prev:after {width:8px; height:12px; background:url(../images/arrow_l_calendar.png) no-repeat; font-size:0;}
 .calendar_wrap .swiper-button-next:after {width:8px; height:12px; background:url(../images/arrow_r_calendar.png) no-repeat; font-size:0;}
 .calendar_wrap .swiper-wrapper {text-align: center;}
@@ -243,6 +245,23 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .day_info_wrap ul li:nth-child(3n) {background:#10316B;}
 .day_info_wrap ul li:nth-child(4n) {background:#ADCE74;}
 .day_info_wrap ul li + li {margin-top:10px;}
+
+/* 툴팁 박스 */
+.day_info_wrap .ico_box [data-tooltip-text]:hover {position:relative;}
+.day_info_wrap .ico_box [data-tooltip-text]:hover:before {content:''; display: inline-block; width:0; height:0; border-left:10px solid #fff; border-bottom:10px solid transparent; position:absolute; bottom:100%; left:10px;}
+.day_info_wrap .ico_box [data-tooltip-text]:hover:after {content:attr(data-tooltip-text); min-width:59px; position:absolute; bottom:130%; left:0; padding:5px 12px; background-color:rgba(255,255,255,1); color:#000; font-size:14px;}
+/*  */
+.day_info_wrap .ico_box span.ball {display: inline-block; width:24px; height:24px; background:url(../images/ico_ball_pink.png) no-repeat center;}
+.day_info_wrap .ico_box span.ball + span.ball {margin-left:8px;}
+
+/* 이미지 */
+.day_info_wrap .ico_box span.ball.pink {background-image: url(../images/ico_ball_pink.png);}
+.day_info_wrap .ico_box span.ball.yellow {background-image: url(../images/ico_ball_yellow.png);}
+.day_info_wrap .ico_box span.ball.green {background-image: url(../images/ico_ball_green.png);}
+.day_info_wrap .ico_box span.ball.blue {background-image: url(../images/ico_ball_blue.png);}
+.day_info_wrap .ico_box span.ball.black {background-image: url(../images/ico_ball_black.png);}
+
+
 
 /* 알림설정 */
 
