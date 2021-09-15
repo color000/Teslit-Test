@@ -3,9 +3,9 @@
 
 /* reset */
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, button, p, blockquote, th, td, select {font-family:'Roboto' ,'Noto Sans KR', 'sans-serif' !important; margin:0; padding:0;-webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-html { width:100%; height:100%; box-sizing: border-box; overflow:hidden; }
-body {overflow:auto; height:100%; overflow:hidden;}
-html, body {background-color:#100F38; transform:translate3d(0, 0, 0); -webkit-transform: translateZ(0);}
+html { width:100%; box-sizing: border-box;}
+body {}
+html, body {background-color:#100F38; }
 body, code {width:100%; min-width:320px; line-height:1; -webkit-text-size-adjust:none; position: relative;}
 code { background:none; display:block; }
 ul li { list-style:none; }
@@ -40,7 +40,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .roboto {font-family: 'Roboto' !important;}
 .Questrial {font-family: 'Questrial' !important;}
 
-.wrap {position:relative; height:100%; overflow:auto; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%);}
+.wrap {position:relative;  height:100%; min-height:100vh; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%);}
 
 header {height:50px; position: absolute; top:0; left:0; width:100%; /* 사파리 브라우저 지원 */ z-index: 999;}
 header.scrolltop {background:#0D0C2C; position:fixed;}

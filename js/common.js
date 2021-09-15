@@ -46,6 +46,15 @@ $(function(){
         $('body').removeClass('modal_open');
       });
 
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 1) {
+        $("header").addClass("scrolltop");
+        } else {
+        $("header").removeClass("scrolltop");
+        }
+    });
+
       $('.up_down_wrap .up_down_click').click(function(){
 
         const open = $(this).next('.up_down').height();
