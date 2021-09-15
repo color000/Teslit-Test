@@ -6,7 +6,7 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 html { width:100%; box-sizing: border-box;}
 body {}
 html, body {background-color:#100F38;}
-body, code {width:100%; min-width:320px; line-height:1; -webkit-text-size-adjust:none; position: relative;}
+body, code {width:100%; line-height:1; -webkit-text-size-adjust:none; position: relative;}
 code { background:none; display:block; }
 ul li { list-style:none; }
 ol { list-style-position:inside; }
@@ -221,7 +221,17 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 
 /* 달력 */
 
-.calendar_wrap {margin:25px -20px 0; height:80px; background:rgba(255, 255, 255, 0.1)}
+.calendar_wrap {position:relative; margin:25px -20px 0; height:80px; padding:10px 35px 15px; box-sizing: border-box; background:rgba(255, 255, 255, 0.1);}
+.calendar {white-space: nowrap; overflow:hidden;}
+.calendar li {display: inline-block; text-align: center;}
+.calendar li + li {margin-left:16px;}
+.calendar_wrap a.prev {position:absolute; top:50%; transform: translateY(-50%); left:14px; width:8px; height:12px; background:url(../images/arrow_l_calendar.png) no-repeat center;}
+.calendar_wrap a.next {position:absolute; top:50%; transform: translateY(-50%); right:14px; width:8px; height:12px; background:url(../images/arrow_r_calendar.png) no-repeat center;}
+
+
+.calendar li dl dt {font-size:12px; color:rgba(255, 255, 255, 0.5);}
+.calendar li dl dd {font-size:15px; color:#fff; height:32px; line-height:32px; margin-top:10px;}
+.calendar li dl dd.on {background:#8FD800; width:32px; height:32px; border-radius: 50%; color:#060510; font-weight: 700; font-size:16px; line-height:32px; margin-top:9px;}
 
 /* 명 모집 */
 .day_info_wrap {margin:10px 0 0; }
