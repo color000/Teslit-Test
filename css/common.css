@@ -272,6 +272,7 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .day_info_wrap .info_content span.location:before {content:'';display:inline-block; width:18px; height:18px; background:url(../images/map_pin.png); vertical-align: -3px; margin-right:3px;}
 
 .day_info_wrap .user_box {margin-top:10px; display:flex; display: -webkit-flex; display: -ms-flexbox; justify-content: space-between; align-items: center; font-size:14px; color:#fff;}
+.day_info_wrap .user_box .left {flex:auto;}
 .day_info_wrap .user_box .left img + img {margin-left:-7px;}
 .day_info_wrap .user_box .person:before {content:'';display:inline-block; width:12px; height:14px; background:url(../images/ico_person.png) no-repeat center; vertical-align: -2px; margin-right:6px;}
 .day_info_wrap .user_box .person .total:before {content:'/'; font-size:14px; color:#fff; margin:0 4px 0 1px;}
