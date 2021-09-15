@@ -15,7 +15,7 @@ $(function(){
         $(this).siblings().addClass('off');
       })
 
-      // 남성, 여성 클릭시 on, off 
+      // 달력 on
       $('.calendar_swiper .date').click(function(){
         $('.date').removeClass('on');
         $(this).addClass('on');
