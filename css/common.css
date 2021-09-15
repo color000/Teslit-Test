@@ -4,7 +4,6 @@
 /* reset */
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, button, p, blockquote, th, td, select {font-family:'Roboto' ,'Noto Sans KR', 'sans-serif' !important; margin:0; padding:0;-webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 html { width:100%; box-sizing: border-box;}
-body {}
 html, body {background-color:#100F38;}
 body, code {width:100%; line-height:1; -webkit-text-size-adjust:none; position: relative;}
 code { background:none; display:block; }
@@ -59,8 +58,8 @@ footer ul li {width:24px; height:24px;}
 footer ul li a {display: block; width:100%; height:100%; background:url(../images/home.png) no-repeat center;}
 footer ul li a.home {background-image:url(../images/home.png)}
 footer ul li a.home.on {background-image: url(../images/home_on.png);}
-footer ul li a.search {background-image:url(../images/Search.png)}
-footer ul li a.search.on {background-image:url(../images/search_on.png)}
+footer ul li a.list {background-image:url(../images/list_off.png)}
+footer ul li a.list.on {background-image:url(../images/list_on.png)}
 footer ul li a.chat {background-image:url(../images/chat.png)}
 footer ul li a.chat.on {background-image:url(../images/chat_on.png)}
 footer ul li a.shopping {background-image:url(../images/shopping.png)}
@@ -210,7 +209,6 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 
 /* 회원가입 절차 */
 
-.process_wrap {}
 .pro_header {position: relative;}
 .pro_header h1 {color:#fff; font-size:18px; font-weight: 500; text-align: center; height:50px; line-height:50px;}
 .pro_header a.back {display: inline-block; width:11px; height:18px; background:url(../images/arrow_l_w.png); position: absolute; top:50%; left:0px; transform: translateY(-50%);}
@@ -283,7 +281,7 @@ dl.info dd {display: inline-block; vertical-align: middle; color:#fff; font-size
 .day_info_wrap .ico_box [data-tooltip-text]:hover {position:relative;}
 .day_info_wrap .ico_box [data-tooltip-text]:hover:before {content:''; display: inline-block; width:0; height:0; border-left:10px solid #fff; border-bottom:10px solid transparent; position:absolute; bottom:100%; left:10px;}
 .day_info_wrap .ico_box [data-tooltip-text]:hover:after {content:attr(data-tooltip-text); min-width:59px; position:absolute; bottom:130%; left:0; padding:5px 12px; background-color:rgba(255,255,255,1); color:#000; font-size:14px;}
-.day_info_wrap .ico_box span.ball {display: inline-block; width:24px; height:24px; background:url(../images/ico_ball_pink.png) no-repeat center;}
+.day_info_wrap .ico_box span.ball {display: inline-block; width:26px; height:28px; background:url(../images/ico_ball_pink.png) no-repeat center;}
 .day_info_wrap .ico_box span.ball + span.ball {margin-left:8px;}
 /* 이미지 */
 .day_info_wrap .ico_box span.ball.pink {background-image: url(../images/ico_ball_pink.png);}
