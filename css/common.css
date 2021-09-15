@@ -42,7 +42,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .roboto {font-family: 'Roboto' !important;}
 .Questrial {font-family: 'Questrial' !important;}
 
-.wrap {position:relative;  height:100%; min-height:100vh; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%);}
+.wrap {position:relative;  height:100%; min-height:100vh; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%); overflow:hidden;}
 
 .up_btn_wrap {display: none; position: fixed; z-index: 999; bottom:70px; right:20px; background: #0D0C2C; border-radius: 50%; box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.149);}
 .up_btn_wrap a {display: block; width:50px; height:50px; background:url(../images/arrow-up.png) no-repeat center}
@@ -194,7 +194,7 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .form_box {margin-top:50px;}
 .form_box .input_box {display: block; position: relative;}
 .form_box .input_box + .input_box {margin-top:25px;}
-.ico_search {display: block; position: absolute; top:0; right:0; width:40px; height:45px; background:url(../images/Search.png) no-repeat center; z-index: 9;}
+.ico_search {display: block; position: absolute; top:0; right:0; width:40px; height:45px; background:url(../images/Search.png) no-repeat right 10px center; z-index: 9;}
 
 .form_box .input_box label {display: block; margin-bottom:10px; color:#fff; font-weight: 400; font-size:15px;}
 .form_box .input_box input {width:100%; height:45px; border:1px solid rgba(255, 255, 255, 0.2); background:transparent; padding:0 15px; color:#fff; box-sizing: border-box; font-size:15px;}
