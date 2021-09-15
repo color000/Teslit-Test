@@ -98,25 +98,38 @@ $(function(){
       });
 
 
-      var swiper = new Swiper('.calendar_swiper', {
+      // var swiper = new Swiper('.calendar_swiper', {
+      //   slidesPerView: 7,
+      //   direction: getDirection(),
+      //   navigation: {
+      //     nextEl: '.swiper-button-next',
+      //     prevEl: '.swiper-button-prev',
+      //   },
+      //   on: {
+      //     resize: function () {
+      //       swiper.changeDirection(getDirection());
+      //     },
+      //   },
+      // });
+
+      // function getDirection() {
+      //   var windowWidth = window.innerWidth;
+      //   var direction = window.innerWidth <= 10 ? 'vertical' : 'horizontal';
+
+      //   return direction;
+      // } 한개씩 넘어가고 싶을때
+
+
+      //여러개씩 넘어가고싶을때 시작
+      var swiper = new Swiper(".calendar_swiper", {
         slidesPerView: 7,
-        direction: getDirection(),
+        spaceBetween: 10,
+        slidesPerGroup: 7,
+        loopFillGroupWithBlank: true,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        on: {
-          resize: function () {
-            swiper.changeDirection(getDirection());
-          },
-        },
-      });
-
-      function getDirection() {
-        var windowWidth = window.innerWidth;
-        var direction = window.innerWidth <= 10 ? 'vertical' : 'horizontal';
-
-        return direction;
-      }
-
+      }); 
+      //여러개씩 넘어가고싶을때 끝
 })
