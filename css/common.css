@@ -226,6 +226,8 @@ input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
 .calendar_wrap .swiper-pointer-events {overflow: hidden;}
 .calendar_wrap .swiper-button-prev {left:5px;}
 .calendar_wrap .swiper-button-next {right:5px;}
+.swiper-button-next:focus-visible, .swiper-button-prev:focus-visible {outline: none;}
+
 .calendar_wrap .swiper-button-prev:after {width:8px; height:12px; background:url(../images/arrow_l_calendar.png) no-repeat; font-size:0;}
 .calendar_wrap .swiper-button-next:after {width:8px; height:12px; background:url(../images/arrow_r_calendar.png) no-repeat; font-size:0;}
 .calendar_wrap .swiper-wrapper {text-align: center;}
