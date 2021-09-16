@@ -139,7 +139,7 @@ h1.logo a {color:#8FD800;}
 .chk_box {color:#fff;}
 
 
-.fixed_btn {position: fixed; bottom:0; left:0; width:100%; -webkit-backface-visibility:hidden; -webkit-transform:translateZ(0); -webkit-transform:translate3d(0, 0, 0); z-index: 998;}
+.fixed_btn {position: fixed; bottom:0; left:0; width:100%; -webkit-backface-visibility:hidden; -webkit-transform:translateZ(0); -webkit-transform:translate3d(0, 0, 0); z-index: 9999;}
 .fixed_btn.two {display: flex; display: -webkit-flex; display: -ms-flexbox;}
 .fixed_btn a {padding:21px 0; font-weight: 500;}
 
@@ -336,7 +336,9 @@ dl.info dd {display: inline-block; vertical-align: middle; color:#fff; font-size
 .list_title_wrap strong.tit {font-size:20px; line-height:29px; color:#fff; font-weight: 500;}
 .list_title_wrap .date_like_box {margin-top:20px; display: flex; display: -ms-flexbox; display: -webkit-flex; justify-content: space-between;}
 .list_title_wrap .date_like_box span.like {color:#fff; font-size:14px;}
-.list_title_wrap .date_like_box span.like:before {content:'';display: inline-block; width:22px; height:19px; background:url(../images/ico_like.png) no-repeat center; vertical-align: -4px; margin-right:8px;}
+.list_title_wrap .date_like_box span.like input[type="checkbox"].ico_like {width:24px; height:24px; background:url(../images/ico_like_off.png); margin-right:8px; vertical-align: -6px;}
+.list_title_wrap .date_like_box span.like input[type="checkbox"]:checked.ico_like {width:24px; height:24px; background:url(../images/ico_like_on.png)}
+/* .list_title_wrap .date_like_box span.like:before {content:'';display: inline-block; width:22px; height:19px; background:url(../images/ico_like.png) no-repeat center; vertical-align: -4px; margin-right:8px;} */
 .list_title_wrap .date_like_box .date_time_box span {color:rgba(255, 255, 255, 0.5); font-size:14px;}
 .list_title_wrap .date_like_box .date_time_box span.time:before {content:''; display: inline-block; width:1px; height:11px; background:rgba(255, 255, 255, 0.5); margin:0 5px;}
 .list_title_wrap p.tip {margin-top:20px; font-size:15px; color:#fff; line-height:22px;}
@@ -377,6 +379,7 @@ dl.info dd {display: inline-block; vertical-align: middle; color:#fff; font-size
 .comment_box li.list a.face {display: inline-block; width:30px; height:30px; border-radius: 50%; overflow:hidden; vertical-align: middle; margin-right:6px;}
 .comment_box li.list a.face img {width:100%; height:100%;}
 .comment_box li.list span.name {color:#fff; font-size:12px;}
+.comment_box li.list span.secret {display: inline-block; width:18px; height:18px; margin-left:10px; background:url(../images/ico_secret.png); vertical-align: middle;}
 .comment_box li.list .body {margin-top:10px;}
 .comment_box li.list .body p.text {font-size:15px; color:#fff; line-height:22px;}
 .comment_box li.list .body span.date {display: block; margin-top:5px; color:rgba(255, 255, 255, 0.5); font-size:12px;}

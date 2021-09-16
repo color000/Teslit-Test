@@ -46,12 +46,22 @@ $(function(){
         $(this).addClass('on');
       })
 
-      $('.comment_box .menu').click(function(){
-        $('.dim').show();
-        $(this).siblings('.edit_popup').fadeIn();
-      })
       
-
+      // 수정, 삭제 버튼 클릭
+      $(".list .menu").click(function () {
+        $(this).siblings('.edit_popup').show();
+        return false; //중요
+      });
+   
+      // 외부영역 클릭 시 팝업 닫기
+      $(document).mouseup(function (e){
+        var LayerPopup = $(".edit_popup");
+        if(LayerPopup.has(e.target).length === 0){
+          LayerPopup.hide();
+        }
+      });
+   
+      
       // News
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
