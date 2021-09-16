@@ -40,6 +40,17 @@ $(function(){
         $(this).addClass('on');
       })
 
+      // 전체, 진행중, 참여중
+      $('.class_on a').click(function(){
+        $('.class_on a').removeClass('on');
+        $(this).addClass('on');
+      })
+
+      $('.comment_box .menu').click(function(){
+        $('.dim').show();
+        $(this).siblings('.edit_popup').fadeIn();
+      })
+      
 
       // News
       var swiper = new Swiper(".mySwiper", {
