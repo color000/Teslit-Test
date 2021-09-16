@@ -97,6 +97,7 @@ body.modal_open {overflow: hidden; position: fixed;}
 .mt10 {margin:10px 0 0 !important;}
 .mt15 {margin:15px 0 0 !important;}
 .mt20 {margin:20px 0 0 !important;}
+.mb10 {margin:0 0 10px !important;}
 
 /* 포인트 컬러 */
 .co1 {color:#FF3399;}
