@@ -429,6 +429,7 @@ dl.info dd {display: inline-block; vertical-align: middle; color:#fff; font-size
 .comment_wrap .secret_box span.secret {margin-top:12px; color:#fff; font-size:15px;}
 .comment_wrap .secret_box input[type="checkbox"] {width:24px; height:24px; background:url(../images/ico_unlock.png); vertical-align: -4px;}
 .comment_wrap .secret_box input[type="checkbox"]:checked {background-image: url(../images/ico_lock.png);}
+.comment_wrap .secret_box input[type="checkbox"] + label {margin:0; vertical-align: 1px;}
 
 .comment_list_wrap {margin-top:30px;}
 
