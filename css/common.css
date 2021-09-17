@@ -490,7 +490,7 @@ input[type="checkbox"].input__on-off {display: none; width:auto; height:auto;}
 
 /* 자유게시판 */
 
-.free_board li.list {padding:15px 20px; border-bottom:1px solid rgba(85, 40, 40, 0.1); margin:0 -20px;}
+.free_board li.list {padding:15px 20px; border-bottom:1px solid rgba(255, 255, 255, 0.1); margin:0 -20px;}
 .free_board li a {display:block;}
 .free_board li a p.tit {color:#fff; font-size:15px; line-height:22px;}
 .free_board li a span.date {display: flex; display: -webkit-flex; display: -ms-flexbox; justify-content: space-between; margin-top:10px; color:rgba(255, 255, 255, 0.5); font-size:12px;}
