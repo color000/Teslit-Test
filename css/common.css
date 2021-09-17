@@ -173,6 +173,9 @@ input[type="radio"] {width:24px; height:24px; background:url(../images/radio_off
 input[type="radio"] + label {vertical-align: middle; font-size:15px; color:#fff; margin-left:8px;}
 input[type="radio"]:checked {background-image: url(../images/radio_on.png);}
 
+input[type="date"]:before {content:attr(data-placeholder);width:100%; color:rgba(255, 255, 255, 0.3)}
+input[type="date"]:focus:before, input[type="date"]:valid:before {display: none;}
+
 /* 로고, GNB */
 
 .gnb_wrap .right_box {display:flex; display: -webkit-box; display: -ms-flexbox; position:absolute; top:50%; transform: translateY(-50%); right:20px; height:24px; justify-content: flex-end;}
