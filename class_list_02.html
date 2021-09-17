@@ -20,15 +20,115 @@
                 <h1>모임 등록</h1>
                 <a href="javascript:history.back();" title="뒤로가기" class="back"></a>
             </div>
-           
-            <div class="list_info_wrap">
-               
-                <div class="map_area">
+            <div class="form_box m0">
+                <span class="input_box">
+                    <label for="">제목</label>
+                    <input type="text" value="" placeholder="모임제목을 입력해주세요.">
+                </span>
+                <span class="input_box">
+                    <label for="">일정내용</label>
+                    <input type="text" value="" placeholder="연락처를 입력해주세요.">
+                </span>
+                <span class="input_box">
+                    <label for="">클럽장소</label>
+                    <div class="search_position">
+                        <input type="text" value="" placeholder="검색어를 입력해주세요." class="search_input">
+                        <a href="#none" title="검색하기 버튼" class="ico_search"></a>
+                    </div>
+                    <span class="tip_ico">장소입력시 지도에 위치가 표시됩니다.</span>
+                </span>
+                <div class="map_area mt25">
                     <img src="./images/map_area.png" alt="" style="width:100%;">
                 </div>
+                <span class="input_box mt25">
+                    <label for="">일정</label>
+                    <div class="search_position">
+                        <input type="date" placeholder="일정을 입력해주세요." >
+                        <a href="#none" title="검색하기 버튼" class="ico_calendar"></a>
+                    </div>
+                </span>
+                <span class="input_box">
+                    <label for="">참여인원</label>
+                    <div class="search_position">
+                        <input type="text" value="" placeholder="" class="">
+                    </div>
+                </span>
+                <span class="input_box">
+                    <label>성별</label>
+                    <div class="btn_box two">
+                        <input type="text" value="" placeholder="직접 입력" class="">
+                        <span class="free">
+                            <input type="checkbox" id="free1" class="free_chk ico_free">
+                        </free>
+                    </div>
+                </span>
+                <span class="input_box">
+                    <label>코트종류</label>
+                    <div class="line">
+                        <span class="input_btn">
+                            <input type="checkbox" id="chk1" checked><label for="chk1">초급</label>
+                        </span>
+                        <span class="input_btn">
+                            <input type="checkbox" id="chk2" checked><label for="chk2">초급</label>
+                        </span>
+                        <span class="input_btn">
+                            <input type="checkbox" id="chk3"><label for="chk3">중급</label>
+                        </span>
+                    </div>
+                    <div class="line">
+                        <span class="input_btn">
+                            <input type="checkbox" id="chk4"><label for="chk4">상급</label>
+                        </span>
+                        <span class="input_btn">
+                            <input type="checkbox" id="chk5"><label for="chk5">고급</label>
+                        </span>
+                    </div>
+                </span>
+                <span class="input_box">
+                    <label>코트종류</label>
+                    <div class="line">
+                        <span class="input_btn">
+                            <input type="radio" id="radio1" name="grade"><label for="radio1">잔디</label>
+                        </span>
+                        <span class="input_btn">
+                            <input type="radio" id="radio2" name="grade" checked><label for="radio2">클레이</label>
+                        </span>
+                        <span class="input_btn ml26">
+                            <input type="radio" id="radio3" name="grade"><label for="radio3">하드</label>
+                        </span>
+                    </div>
+                </span>
+                <span class="input_box">
+                    <label>코트종류</label>
+                    <div class="line">
+                        <span class="input_btn min_w86">
+                            <input type="checkbox" id="chk6" checked><label for="chk6">실내</label>
+                        </span>
+                        <span class="input_btn ml14">
+                            <input type="checkbox" id="chk7"><label for="chk7">실외</label>
+                        </span>
+                    </div>
+                    <div class="line">
+                        <span class="input_btn">
+                            <input type="checkbox" id="chk8"><label for="chk8">샤워시설</label>
+                        </span>
+                        <span class="input_btn ml14">
+                            <input type="checkbox" id="chk9"><label for="chk9">정수기</label>
+                        </span>
+                    </div>
+                </span>
+                <span class="input_box">
+                    <label>첨부파일</label>
+                    <div class="upload_wrap">
+                        <ul class="upload_box">
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                        </ul>
+                    </div>
+                </span>
             </div>
-            
-            
+
             <div class="fixed_btn two">
                 <a href="#none" class="btn1 co1">취소</a>
                 <a href="#none" class="btn1">등록</a>
