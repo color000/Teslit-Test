@@ -51,7 +51,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* 글쓰기 버튼 */
 .class_write_wrap {position: fixed; z-index: 999; bottom:70px; right:20px; background: #0D0C2C; border-radius: 50%; box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.149);}
-.class_write_wrap a {display: block; width:50px; height:50px; background:url(../images/ico_write.png) no-repeat center}
+.class_write_wrap a {display: block; width:50px; height:50px; background:#1A193A url(../images/ico_write.png) no-repeat center; border-radius: 50%;}
+.class_write_wrap a.write {background-image: url(../images/write.png);}
 
 
 header {height:50px; position: absolute; top:0; left:0; width:100%; /* 사파리 브라우저 지원 */ z-index: 999;}
@@ -106,6 +107,7 @@ body.modal_open {overflow: hidden; position: fixed;}
 .mt20 {margin:20px 0 0 !important;}
 .mt25 {margin:25px 0 0 !important;}
 .mt30 {margin:30px 0 0 !important;}
+.mt40 {margin:40px 0 0 !important;}
 .mt100 {margin:100px 0 0 !important;}
 .ml26 {margin:0 0 0 26px !important;}
 .ml14 {margin:0 0 0 14px !important;}
@@ -133,6 +135,11 @@ h1.logo a {color:#8FD800;}
 .btn3.type2 {border-radius:2px; background:rgba(255, 255, 255, 0.15); color:#fff; height:38px; line-height:38px;}
 
 .btn4 {display: inline-block; padding:10px 20px; border-radius: 5px; border:1px solid rgba(255, 255, 255, 0.3); color:#fff; font-size:15px; }
+.btn5 {display: inline-block; width:64px; padding:9px 0; border-radius: 5px; border:1px solid #8FD800; color:#8FD800; font-size:12px; text-align: center; }
+.btn5.co1 {color:#FF3399; border-color: #FF3399;}
+.btn5.co2 {color:rgba(255, 255, 255, 0.3) !important; border-color: rgba(255, 255, 255, 0.3);}
+
+.btn6 {display: block; padding:19px 0; color:#060510; font-size:15px; font-weight: 500; line-height:22px; text-align: center; background:#8FD800;}
 
 /* bg line */
 .bg_line {height:9px; background:rgba(255, 255, 255, 0.08); margin:0 -20px;}
@@ -293,6 +300,7 @@ input[type="date"], input[type="time"] {text-align: left; justify-content: flex-
 /* 공유하기 버튼 */
 a.share {display: inline-block; width:24px; height:24px; background:url(../images/ico_share.png); position:absolute; top:50%; right:0px; transform: translateY(-50%);}
 .pro_header a.write {display: inline-block; width:24px; height:24px; background:url(../images/menu_btn.png); position:absolute; top:50%; right:0; transform: translateY(-50%);}
+.pro_header a.filter {display: inline-block; width:24px; height:24px; background:url(../images/filter.png); position:absolute; top:50%; right:0; transform: translateY(-50%);}
 
 .progress {margin:10px 0 10px;}
 .progress ul {display: flex; justify-content: flex-end;}
@@ -673,11 +681,12 @@ ul.chat li .time {vertical-align:bottom; color:rgba(255, 255, 255, 0.5); font-si
 .gallery_list_wrap ul.line + ul.line {margin-top:30px;}
 .gallery_list_wrap ul li {flex:1;}
 .gallery_list_wrap ul li:nth-child(2n) {margin-left:20px;}
-.gallery_list_wrap ul li a.thum {width:100%; display: block;}
+.gallery_list_wrap ul li a.thum {width:100%; display: block; }
 .gallery_list_wrap ul li a.thum img {width:100%; height:100%;}
 .gallery_list_wrap ul li p.tit {font-size:15px; color:#fff; line-height:22px; margin:10px 0 5px;}
 .gallery_list_wrap ul li span.date {color:rgba(255, 255, 255, 0.5); font-size:12px;}
-
+.gallery_list_wrap.video a.thum > span.bg {display: block; position: relative;}
+.gallery_list_wrap.video a.thum > span.bg:before {content:''; display: block; position: absolute; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.3) url(../images/play.png) no-repeat center}
 
 .like_share_box {position:relative;}
 
@@ -686,7 +695,35 @@ ul.chat li .time {vertical-align:bottom; color:rgba(255, 255, 255, 0.5); font-si
 .gallery_read_wrap .read_top a img {width:100%; height:100%;}
 .gallery_read_wrap .read_top span.info {color:rgba(255, 255, 255, 0.5); font-size:12px; vertical-align: middle;}
 .gallery_read_wrap .read_content {margin-top:15px;}
-.gallery_read_wrap .read_content strong.tit {color:#fff; font-size:24px; line-height:25px; display:block; font-weight: 400;}
+.gallery_read_wrap .read_content strong.tit {color:#fff; font-size:24px; line-height:35px; display:block; font-weight: 400;}
 .gallery_read_wrap .read_content span.date {display: block; font-size: 12px; color:rgba(255, 255, 255, 0.5); margin-top:10px;}
-.gallery_read_wrap .read_content img {margin:20px 0 20px; width:100%;}
+.gallery_read_wrap .read_content span.date + .bg_line {margin:20px -20px 0;}
+.gallery_read_wrap .read_content span.bg {display: block; position: relative; margin:20px 0 20px;}
+.gallery_read_wrap .read_content img {width:100%;}
 .gallery_read_wrap .read_content p.content {font-size:15px; line-height:22px; color:#fff; margin:20px 0 20px;}
+/* 중고 & 양도장터 */
+.gallery_read_wrap .read_content dl.market_info {margin-top:20px;}
+.gallery_read_wrap .read_content dl.market_info dt {color:rgba(255, 255, 255, 0.3); font-size:14px;}
+.gallery_read_wrap .read_content dl.market_info dt ~ dt {margin-top:20px;}
+.gallery_read_wrap .read_content dl.market_info dd {color:#fff; font-size:15px; margin-top:10px;}
+.gallery_read_wrap.video span.bg:before {content:''; display: block; position: absolute; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.3) url(../images/play.png) no-repeat center}
+
+/* 갤러리 파일업로드 */
+.upload_wrap {margin:20px 0 20px; border:1px solid rgba(255, 255, 255, 0.2); height:140px;}
+.upload_wrap a.upload {display: block; height:100%; background:url(../images/file_upload.png) no-repeat center}
+.gallery_text {background:transparent; width:100%; height:210px; border:1px solid rgba(255, 255, 255, 0.2); padding:10px 15px; box-sizing: border-box; color:#fff; font-size:15px; resize: none;}
+.gallery_text:focus {outline:none;}
+
+.market_wrap ul li {position:relative; padding:22px 120px 22px 20px; border-bottom:1px solid rgba(255, 255, 255, 0.1); margin:0 -20px;}
+.market_wrap ul li:first-of-type {border-top:1px solid rgba(255, 255, 255, 0.1);}
+.market_wrap ul li p.tit {color:#fff; font-size:15px; line-height:22px; word-break: break-all;}
+.market_wrap ul li span.date {color:rgba(255, 255, 255, 0.5); font-size:12px;}
+.market_wrap ul li a.trade {position:absolute; top:50%; transform: translateY(-50%); right:20px;}
+
+
+
+/* 에러페이지 */
+.error_wrap h1.tit {margin:120px 0 75px; color:#8FD800; font-size:24px; text-align: center; font-weight: 400;}
+.error_wrap .content {color:#fff; text-align: center;}
+.error_wrap .content h3 {font-weight: 400; font-size:24px; line-height:35px;}
+.error_wrap .content p {font-size:14px; line-height:20px; margin-top:10px;}
