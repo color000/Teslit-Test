@@ -51,6 +51,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* 글쓰기 버튼 */
 .class_write_wrap {position: fixed; z-index: 999; bottom:70px; right:20px; background: #0D0C2C; border-radius: 50%; box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.149);}
+.class_write_wrap.btm20 {bottom: 20px;}
 .class_write_wrap a {display: block; width:50px; height:50px; background:#1A193A url(../images/ico_write.png) no-repeat center; border-radius: 50%;}
 .class_write_wrap a.write {background-image: url(../images/write.png);}
 
@@ -328,7 +329,7 @@ a.share {display: inline-block; width:24px; height:24px; background:url(../image
 
 .info_wrap {margin-top:30px; padding:20px; background:rgba(255, 255, 255, 0.08); border-radius: 10px;}
 dl.info {display:flex; justify-content: space-between;}
-dl.info.no_flex {display:block; min-height:150px;}
+dl.info.no_flex {display:block;}
 dl.info.no_flex.no {min-height:auto;}
 dl.info + dl.info {margin-top:20px;}
 dl.info.no_flex dd {margin-top:10px;}
@@ -417,7 +418,7 @@ dl.info dd {display: inline-block; vertical-align: middle; color:#fff; font-size
 
 /* list_title_wrap 모임상세 */
 
-.list_title_wrap {padding-bottom:30px;}
+.list_title_wrap {padding-bottom:30px; margin-top:10px;}
 .list_title_wrap strong.tit {font-size:20px; line-height:29px; color:#fff; font-weight: 500;}
 .list_title_wrap .date_like_box {margin-top:20px; display: flex; display: -ms-flexbox; display: -webkit-flex; justify-content: space-between;}
 /* 좋아요 버튼 */
@@ -473,7 +474,7 @@ span.like input[type="checkbox"]:checked.ico_like {width:24px; height:24px; back
 
 .edit_popup {display: none; position:absolute; top:30px; right:0; width:120px; background:#1A193A; z-index: 1001;}
 .edit_popup.t40 {top:45px;}
-.edit_popup li:not(:first-child) {border-top: 1px solid rgba(255, 255, 255, 0.5);}
+.edit_popup li:not(:first-child) {border-top: 1px solid rgba(255, 255, 255, 0.1);}
 .edit_popup li a {display: block; padding:14px 0; color:#fff; font-size:15px; text-align: center;}
 
 /* 알림설정 */
@@ -619,6 +620,7 @@ ul.detail dl dt.ico_location:before {background-image: url(../images/ico_locatio
 
 /* 내채팅 */
 .chat_list_wrap {margin-top:20px;}
+ul.chat {margin-top:10px;}
 ul.chat_list li { padding:15px; background:rgba(255, 255, 255, 0.08); border-radius: 10px;}
 ul.chat_list li.flex {display: flex; display: -webkit-flex; display: -ms-flexbox;}
 ul.chat_list li + li {margin-top:15px;}
@@ -671,7 +673,7 @@ ul.chat li .time {vertical-align:bottom; color:rgba(255, 255, 255, 0.5); font-si
 
 /* 회원약관 */
 
-.tos_wrap {color:#fff; line-height:20px; font-weight: 400;}
+.tos_wrap {margin-top:20px; color:#fff; line-height:20px; font-weight: 400;}
 
 
 /* 갤러리 */
