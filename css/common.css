@@ -59,7 +59,7 @@ header.scrolltop {background:#0D0C2C; position:fixed;}
 
 .container {padding:0 20px; padding-bottom:50px;}
 
-footer {position: fixed; bottom:0; left:0; width:100%; height:55px; padding:0 25px; box-sizing: border-box; background:#18162D;}
+footer {position: fixed; bottom:0; left:0; width:100%; height:55px; padding:0 25px; box-sizing: border-box; background:#18162D; z-index: 100;}
 footer ul {width:100%; height:100%; display: flex; align-items: center; justify-content: space-between;}
 footer ul li {width:24px; height:24px;}
 footer ul li a {display: block; width:100%; height:100%; background:url(../images/home.png) no-repeat center;}
@@ -290,7 +290,9 @@ input[type="date"], input[type="time"] {text-align: left; justify-content: flex-
 .pro_header {position: relative;}
 .pro_header h1 {color:#fff; font-size:18px; font-weight: 500; text-align: center; height:50px; line-height:50px;}
 .pro_header a.back {display: inline-block; width:11px; height:18px; background:url(../images/arrow_l_w.png); position: absolute; top:50%; left:0px; transform: translateY(-50%);}
-.pro_header a.share {display: inline-block; width:24px; height:24px; background:url(../images/ico_share.png); position:absolute; top:50%; right:0px; transform: translateY(-50%);}
+/* 공유하기 버튼 */
+a.share {display: inline-block; width:24px; height:24px; background:url(../images/ico_share.png); position:absolute; top:50%; right:0px; transform: translateY(-50%);}
+.pro_header a.write {display: inline-block; width:24px; height:24px; background:url(../images/menu_btn.png); position:absolute; top:50%; right:0; transform: translateY(-50%);}
 
 .progress {margin:10px 0 10px;}
 .progress ul {display: flex; justify-content: flex-end;}
@@ -410,9 +412,10 @@ dl.info dd {display: inline-block; vertical-align: middle; color:#fff; font-size
 .list_title_wrap {padding-bottom:30px;}
 .list_title_wrap strong.tit {font-size:20px; line-height:29px; color:#fff; font-weight: 500;}
 .list_title_wrap .date_like_box {margin-top:20px; display: flex; display: -ms-flexbox; display: -webkit-flex; justify-content: space-between;}
-.list_title_wrap .date_like_box span.like {color:#fff; font-size:14px;}
-.list_title_wrap .date_like_box span.like input[type="checkbox"].ico_like {width:24px; height:24px; background:url(../images/ico_like_off.png); margin-right:8px; vertical-align: -6px;}
-.list_title_wrap .date_like_box span.like input[type="checkbox"]:checked.ico_like {width:24px; height:24px; background:url(../images/ico_like_on.png)}
+/* 좋아요 버튼 */
+span.like {color:#fff; font-size:14px;}
+span.like input[type="checkbox"].ico_like {width:24px; height:24px; background:url(../images/ico_like_off.png); margin-right:8px; vertical-align: -6px;}
+span.like input[type="checkbox"]:checked.ico_like {width:24px; height:24px; background:url(../images/ico_like_on.png)}
 /* .list_title_wrap .date_like_box span.like:before {content:'';display: inline-block; width:22px; height:19px; background:url(../images/ico_like.png) no-repeat center; vertical-align: -4px; margin-right:8px;} */
 .list_title_wrap .date_like_box .date_time_box span {color:rgba(255, 255, 255, 0.5); font-size:14px;}
 .list_title_wrap .date_like_box .date_time_box span.time:before {content:''; display: inline-block; width:1px; height:11px; background:rgba(255, 255, 255, 0.5); margin:0 5px;}
@@ -461,6 +464,7 @@ dl.info dd {display: inline-block; vertical-align: middle; color:#fff; font-size
 .comment_box li.list .body span.date {display: block; margin-top:5px; color:rgba(255, 255, 255, 0.5); font-size:12px;}
 
 .edit_popup {display: none; position:absolute; top:30px; right:0; width:120px; background:#1A193A; z-index: 1001;}
+.edit_popup.t40 {top:45px;}
 .edit_popup li:not(:first-child) {border-top: 1px solid rgba(255, 255, 255, 0.5);}
 .edit_popup li a {display: block; padding:14px 0; color:#fff; font-size:15px; text-align: center;}
 
@@ -660,3 +664,29 @@ ul.chat li .time {vertical-align:bottom; color:rgba(255, 255, 255, 0.5); font-si
 /* 회원약관 */
 
 .tos_wrap {color:#fff; line-height:20px; font-weight: 400;}
+
+
+/* 갤러리 */
+
+.gallery_list_wrap {margin-top:20px;}
+.gallery_list_wrap ul.line {display: flex;}
+.gallery_list_wrap ul.line + ul.line {margin-top:30px;}
+.gallery_list_wrap ul li {flex:1;}
+.gallery_list_wrap ul li:nth-child(2n) {margin-left:20px;}
+.gallery_list_wrap ul li a.thum {width:100%; display: block;}
+.gallery_list_wrap ul li a.thum img {width:100%; height:100%;}
+.gallery_list_wrap ul li p.tit {font-size:15px; color:#fff; line-height:22px; margin:10px 0 5px;}
+.gallery_list_wrap ul li span.date {color:rgba(255, 255, 255, 0.5); font-size:12px;}
+
+
+.like_share_box {position:relative;}
+
+.gallery_read_wrap {margin-top:10px;}
+.gallery_read_wrap .read_top a {width:34px; height:34px; display: inline-block; border-radius: 50%; overflow: hidden; vertical-align: middle; margin-right:6px;}
+.gallery_read_wrap .read_top a img {width:100%; height:100%;}
+.gallery_read_wrap .read_top span.info {color:rgba(255, 255, 255, 0.5); font-size:12px; vertical-align: middle;}
+.gallery_read_wrap .read_content {margin-top:15px;}
+.gallery_read_wrap .read_content strong.tit {color:#fff; font-size:24px; line-height:25px; display:block; font-weight: 400;}
+.gallery_read_wrap .read_content span.date {display: block; font-size: 12px; color:rgba(255, 255, 255, 0.5); margin-top:10px;}
+.gallery_read_wrap .read_content img {margin:20px 0 20px; width:100%;}
+.gallery_read_wrap .read_content p.content {font-size:15px; line-height:22px; color:#fff; margin:20px 0 20px;}

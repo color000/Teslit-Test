@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Teslit APP</title>
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <script src="./lib/slick.js"></script>
+    <script src="./lib/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./lib/slick.css">
+    <link rel="stylesheet" href="./lib/slick-theme.css">
+    <link rel="stylesheet" href="./lib/swiper-bundle.min.css">
+    <script src="./js/common.js"></script>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="pro_header">
+                <h1>이미지 갤러리</h1>
+                <a href="javascript:history.back();" title="뒤로가기" class="back"></a>
+                <a href="#none" title="글쓰기" class="write"></a>
+                <ul class="edit_popup t40">
+                    <li><a href="#none">수정하기</a></li>
+                    <li><a href="#none">삭제하기</a></li>
+                </ul>
+            </div>
+            <div class="gallery_read_wrap">
+                <div class="read_top">
+                    <a href="./profile_read.html"><img src="./images/chat1.png" alt=""></a>
+                    <span class="info">슬기/서울/여/88</span>
+                </div>
+                <div class="read_content">
+                    <strong class="tit">달빛과 함께 여름밤 테니스</strong>
+                    <span class="date">2021-10-30 13:00</span>
+                    <img src="./images/gallery_read.png" alt="">
+                    <div class="like_share_box">
+                        <span class="like"><input type="checkbox" class="ico_like">좋아요 83개</span>
+                        <a href="#none" title="공유하기" class="share"></a>
+                    </div>
+                    <p class="content">
+                        초보자는 테니스 라켓을 처음 다루고 라켓의 가운데 부분에 공을 맞추기 힘들기 때문에 처음에는 라켓의 헤드가 무거운, 즉 가운데 라켓목 부분에 손가락을 걸쳤을때 라켓이 수평으로 똑바로 서 있는 라켓이 테니스공에 힘을 전달하기에 좋은 라켓입니다.
+                    </p>
+                </div>
+                <div class="bg_line"></div>
+                <div class="comment_wrap">
+                    <div class="comment_tit">
+                        <strong class="tit">댓글</strong><span class="number">12</span>
+                    </div>
+                    <div class="form_box mt15">
+                        <span class="input_box">
+                            <input type="text" value="" placeholder="내용을 입력해주세요." class="search_input">
+                            <a href="#none" title="댓글 달기" class="ico_comment"></a>
+                        </span>
+                        <div class="secret_box">
+                            <input type="checkbox" id="secret1">
+                            <label class="secret" for="secret1">비밀 댓글</label>
+                        </div>
+                    </div>
+                    <div class="comment_list_wrap">
+                        <ul class="comment_box">
+                            <li class="list">
+                                <div class="head">
+                                    <a href="./profile_read.html" class="face">
+                                        <img src="./images/user1.png" alt="">
+                                    </a>
+                                    <span class="name">범/서울,일산/남/94</span>
+                                    <span class="secret"></span>
+                                </div>
+                                <div class="body">
+                                    <p class="text">달빛 테니스!! 저도 함께하고 싶습니다~
+                                        다음에는 꼭 갈께요~</p>
+                                    <span class="date">2021.09.06 오전 11:30</span>
+                                </div>
+                                <a href="#none" title="메뉴" class="menu"></a>
+                                <ul class="edit_popup" style="display: none;">
+                                    <li><a href="#none">수정하기</a></li>
+                                    <li><a href="#none">삭제하기</a></li>
+                                </ul>
+                            </li>
+                            <li class="list">
+                                <div class="head">
+                                    <a href="./profile_read.html" class="face">
+                                        <img src="./images/user2.png" alt="">
+                                    </a>
+                                    <span class="name">범/서울,일산/남/94</span>
+                                </div>
+                                <div class="body">
+                                    <p class="text">달빛 테니스!! 저도 함께하고 싶습니다~
+                                        다음에는 꼭 갈께요~</p>
+                                    <span class="date">2021.09.06 오전 11:30</span>
+                                </div>
+                                <a href="#none" title="메뉴" class="menu"></a>
+                                <ul class="edit_popup" style="display: none;">
+                                    <li><a href="#none">수정하기</a></li>
+                                    <li><a href="#none">삭제하기</a></li>
+                                </ul>
+                            </li>
+                            <li class="list">
+                                <div class="head">
+                                    <a href="./profile_read.html" class="face">
+                                        <img src="./images/user3.png" alt="">
+                                    </a>
+                                    <span class="name">범/서울,일산/남/94</span>
+                                    <span class="secret"></span>
+                                </div>
+                                <div class="body">
+                                    <div class="form_box mb10">
+                                        <span class="input_box">
+                                            <input type="text" value="달빛 테니스!! 저도 함께하고 싶습니다~
+                                            다음에는 꼭 갈께요~" placeholder="내용을 입력해주세요." class="search_input">
+                                        </span>
+                                        <!-- 수정하기 버튼 눌렀을때 -->
+                                    </div>
+                                    <span class="date">2021.09.06 오전 11:30</span>
+                                </div>
+                                <a href="#none" title="메뉴" class="menu"></a>
+                                <ul class="edit_popup" style="display: none;">
+                                    <li><a href="#none">수정하기</a></li>
+                                    <li><a href="#none">삭제하기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
