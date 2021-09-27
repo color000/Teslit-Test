@@ -1,5 +1,26 @@
 $(function(){
       
+  $('.modal1').click(function () {
+    $('.dim').show();
+    $(".membership_modal_1").show();
+    $('body').addClass('modal_open');
+  });
+
+  $('.modal2').click(function () {
+    $('.dim').show();
+    $(".membership_modal_2").show();
+    $('body').addClass('modal_open');
+  });
+
+  $(".btn_clear").click(function(){
+    $(".dim").hide();
+    $(".membership_modal_1").hide();
+    $(".membership_modal_2").hide();
+    $('body').removeClass('modal_open');
+  })
+
+
+
     // 위로 올라가는 버튼
       $(function() {
         $(window).scroll(function() {
@@ -100,7 +121,7 @@ $(function(){
         } else {
         $("header").removeClass("scrolltop");
         }
-    });
+      });
 
       $('.up_down_wrap .up_down_click').click(function(){
 
@@ -154,6 +175,11 @@ $(function(){
       }); 
       //여러개씩 넘어가고싶을때 끝
 
+      // 멤버쉽
+      // $('.modal1').click(function () {
+      //   $('.dim').show();
+      //   $('body').addClass('modal_open');
+      // });
 
 
 })

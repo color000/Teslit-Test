@@ -31,6 +31,7 @@ input:focus {outline: none;}
 select {-webkit-appearance:none; /* for chrome */ -moz-appearance:none; /*for firefox*/ appearance:none; box-sizing: border-box; background:url(../images/select_bg.png) no-repeat right 16px center !important; -webkit-border-radius:0; -moz-border-radius:0;}
 select:focus {outline: none;}
 select::-ms-expand{display:none;/*for IE10,11*/}
+select:disabled {background:none !important; color:rgba(255, 255, 255, 0.3) !important;}
 
 .target{ -webkit-backface-visibility:hidden; -webkit-transform:translateZ(0); -webkit-transform:translate3d(0, 0, 0); }
 
@@ -112,7 +113,7 @@ body.modal_open {overflow: hidden; position: fixed;}
 .mb30 {margin-bottom:30px !important;}
 /* 포인트 컬러 */
 .co1 {color:#FF3399;}
-.co2 {color:#8FD800;}
+.co2 {color:#8FD800 !important;}
 .co3 {color:#060510;}
 .co4 {color:#FAE100;}
 
@@ -173,6 +174,8 @@ h1.logo a {color:#8FD800;}
 
 /*  */
 
+input[type="text"]:disabled {color:rgba(255, 255, 255, 0.3) !important;}
+
 input[type="checkbox"] {width:24px; height:24px; background:url(../images/check_off.png); vertical-align: middle; border:0;}
 input[type="checkbox"] + label {vertical-align: middle; font-size:15px; color:#fff; margin-left:8px;}
 input[type="checkbox"]:checked {background-image: url(../images/check_on.png);}
@@ -184,7 +187,7 @@ input[type="radio"]:checked {background-image: url(../images/radio_on.png);}
 input[type="date"]:before {content:attr(data-placeholder);width:100%; color:rgba(255, 255, 255, 0.3)}
 input[type="date"]:focus:before, input[type="date"]:valid:before {display: none;}
 
-input[type="date"], input[type="time"] {text-align: left;}
+input[type="date"], input[type="time"] {text-align: left; justify-content: flex-start;}
 
 /* 로고, GNB */
 
@@ -301,6 +304,7 @@ input[type="date"], input[type="time"] {text-align: left;}
 .face_img .img_box {display:inline-block; position:relative; width:84px; height:84px; border-radius: 50%;}
 .face_img .img_box img {width:100%; height:100%; border-radius:50%; overflow: hidden;}
 .face_img .img_box a.camera {position: absolute; bottom:0; right:0; width:30px; height:30px; display:inline-block; background:url(../images/ico_camera.png)}
+.face_img .img_box a.camera.type2 {background-image: url(../images/ico_camera2.png);}
 .face_img .name_box {margin-top:10px;}
 .face_img .name_box span {vertical-align: middle;}
 .face_img .name_box span.gender {display: inline-block; width:20px; height:20px; margin-left:6px;}
@@ -308,13 +312,14 @@ input[type="date"], input[type="time"] {text-align: left;}
 .face_img .name_box span.gender.female {background-image: url(../images/female.png);}
 .face_img .name_box p.message {width:50%; margin:10px auto 0; color:rgba(255, 255, 255, 0.5); font-size:12px; line-height:18px;}
 .face_img .name_box span.name {display: inline-block; color:#fff; font-size:18px;}
-.face_img .name_box span.grade {display: inline-block; margin-top:17px; color:#8fd800; border:1px solid #8FD800; padding:6px 10px; border-radius: 100px;}
+.face_img .name_box span.grade {display: inline-block; margin-top:17px; color:#8fd800; border:1px solid #8FD800; padding:6px 10px; border-radius: 100px; font-size:15px;}
 
 /* 프로필 확인 */
 
 .info_wrap {margin-top:30px; padding:20px; background:rgba(255, 255, 255, 0.08); border-radius: 10px;}
 dl.info {display:flex; justify-content: space-between;}
 dl.info.no_flex {display:block; min-height:150px;}
+dl.info.no_flex.no {min-height:auto;}
 dl.info + dl.info {margin-top:20px;}
 dl.info.no_flex dd {margin-top:10px;}
 dl.info dt {display: inline-block; vertical-align: middle; color:rgba(255, 255, 255, 0.5); font-size:14px; min-width:120px; line-height:22px;}
@@ -644,3 +649,14 @@ ul.chat li .time {vertical-align:bottom; color:rgba(255, 255, 255, 0.5); font-si
 
 .logout_wrap {margin-top:20px; text-align: center;}
 .logout_wrap a {color:#fff; font-size:14px;}
+
+
+/* 맴버쉽 모달 */
+
+
+[class^='membership_modal_'] {display: none; position:fixed; z-index: 1001; top:50%; left:50%; transform:translate(-50%,-50%); padding-top:25px; width:240px; background:#1A193A; color:#fff; font-size:15px; line-height:22px; text-align: center;}
+[class^='membership_modal_'] a.btn_clear {margin-top:30px; display: block; padding:10px 0 18px; border-top:1px solid rgba(255, 255, 255, 0.1); color:#fff; font-size:15px;}
+
+/* 회원약관 */
+
+.tos_wrap {color:#fff; line-height:20px; font-weight: 400;}
