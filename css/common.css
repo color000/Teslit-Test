@@ -74,10 +74,12 @@ footer ul li a.user {background-image:url(../images/user.png)}
 footer ul li a.user.on {background-image:url(../images/user_on.png)}
 
 .media_flex {display: flex;}
+.media_flex.line_center {align-items: center;}
 .media_flex input {flex:100;}
 .media_flex input + a {margin-left:10px;}
 .media_flex input + a.check {height:45px; width:100px; background:rgba(255, 255, 255, 0.15); text-align: center; line-height:45px; color:#fff; font-size:15px;}
 .media_flex select.select_type2 {margin-right:10px; width:100px; color:#fff; border:1px solid rgba(255, 255, 255, 0.2); font-size:15px;}
+.media_flex span.wave {color:#fff; font-size:15px; margin:0 7px;}
 
 
 /*뒤 검은 배경*/
@@ -351,6 +353,7 @@ dl.info dd {display: inline-block; vertical-align: middle; color:#fff; font-size
 .day_info_list_sort_wrap ul li + li {margin-left:26px;}
 .day_info_list_sort_wrap ul li a {display: block; color:rgba(255, 255, 255, 0.3); font-size:20px; padding:10px 0; font-weight: 700;}
 .day_info_list_sort_wrap ul li a.on {color:#fff;}
+.day_info_list_sort_wrap ul li a.alarm:after {content:'';display: inline-block;width:6px;height:6px; background:#FF3399; border-radius: 50%; vertical-align: top; margin:-2px 0 0 3px;}
 
 /* 명 모집 */
 .day_info_wrap {margin:20px 0 0; }
