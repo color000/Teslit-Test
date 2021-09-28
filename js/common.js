@@ -78,6 +78,11 @@ $(function(){
         $(this).siblings('.edit_popup').show();
         return false; //중요
       });
+
+      $(".pro_header .filter").click(function () {
+        $(this).siblings('.edit_popup').show();
+        return false; //중요
+      });
    
       // 외부영역 클릭 시 팝업 닫기
       $(document).mouseup(function (e){
