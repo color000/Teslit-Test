@@ -24,6 +24,7 @@ legend { height:0; width:0; display:block; text-indent:-9999em; }
 label { cursor:pointer; }
 button::-moz-focus-inner { padding:0; border:0; }
 input {-webkit-appearance: none; -webkit-border-radius: 0;}
+textarea::placeholder {color:rgba(255, 255, 255, 0.3); font-size:15px;}
 input::placeholder {color:rgba(255, 255, 255, 0.3); font-size:15px;}
 input.op50::placeholder {color:rgba(255, 255, 255, 0.5); font-size:15px;}
 input:focus {outline: none;}
