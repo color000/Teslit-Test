@@ -322,6 +322,8 @@ a.share {display: inline-block; width:24px; height:24px; background:url(../image
 .face_img .name_box span.gender.male {background-image: url(../images/male.png);}
 .face_img .name_box span.gender.female {background-image: url(../images/female.png);}
 .face_img .name_box p.message {width:50%; margin:10px auto 0; color:rgba(255, 255, 255, 0.5); font-size:12px; line-height:18px;}
+.face_img .name_box p.message.corona {display: inline-block; width:auto; padding:5px 8px; border-radius: 30px; border:1px solid #8FD800; color:#8FD800;}
+.face_img .name_box p.message.corona.off {border:1px solid rgba(255, 255, 255, 0.5); color:rgba(255, 255, 255, 0.5);}
 .face_img .name_box span.name {display: inline-block; color:#fff; font-size:18px;}
 .face_img .name_box span.grade {display: inline-block; margin-top:17px; color:#8fd800; border:1px solid #8FD800; padding:6px 10px; border-radius: 100px; font-size:15px;}
 
