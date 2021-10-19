@@ -12,13 +12,31 @@ $(function(){
     $('body').addClass('modal_open');
   });
 
+  $('.modal3').click(function () {
+    $('.dim').show();
+    $(".membership_modal_3").show();
+    $('body').addClass('modal_open');
+  });
+
   $(".btn_clear").click(function(){
     $(".dim").hide();
     $(".membership_modal_1").hide();
     $(".membership_modal_2").hide();
+    $(".membership_modal_3").hide();
     $('body').removeClass('modal_open');
   })
 
+  $('.modal4').click(function () {
+    $(".dim").show();
+    $(".membership_modal_4").show();
+    $('body').addClass('modal_open');
+  });
+
+  $(".modal4_btn").click(function(){
+    $(".dim").hide();
+    $(".membership_modal_4").hide();
+    $('body').removeClass('modal_open');
+  })
 
 
     // 위로 올라가는 버튼

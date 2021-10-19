@@ -167,6 +167,9 @@ h1.logo a {color:#8FD800;}
 .btn_box.two.left0 > * + * {margin-left:0;}
 .btn_box select {text-align: left; padding-left:15px; font-size:15px;}
 
+.btn_box.two span.in_text {display: flex; font-size:14px; color:#fff; align-items: center;}
+.btn_box.two span.in_text span.tit {white-space: nowrap; margin-right:10px;}
+
 .chk_wrap {margin-top:30px;}
 .chk_wrap ul {padding:14px 0 0 20px; border-top:1px solid rgba(255, 255, 255, 0.15); margin-top:15px;}
 .chk_wrap ul li + li {margin-top:10px;}
@@ -735,3 +738,9 @@ ul.chat li .time {vertical-align:bottom; color:rgba(255, 255, 255, 0.5); font-si
 .error_wrap .content {color:#fff; text-align: center;}
 .error_wrap .content h3 {font-weight: 400; font-size:24px; line-height:35px;}
 .error_wrap .content p {font-size:14px; line-height:20px; margin-top:10px;}
+
+
+
+.two_btn {display: flex; width:100%;}
+.two_btn > * {flex:1;}
+.two_btn > * + * {border-left:1px solid rgba(255, 255, 255, 0.1);}
