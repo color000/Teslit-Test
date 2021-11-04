@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Teslit APP</title>
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <script src="./lib/slick.js"></script>
+    <script src="./lib/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./lib/slick.css">
+    <link rel="stylesheet" href="./lib/slick-theme.css">
+    <link rel="stylesheet" href="./lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+
+</head>
+<body>
+    <div class="credit_wrap">
+        <h1>
+            <span class="tit">[결과출력]</span>
+            <span class="sub">결제 내역서</span>
+        </h1>
+        <p class="info">요청 결과를 출력하는 페이지 입니다.<br/>
+            요청이 정상적으로 처리된 경우 결과코드(res_cd)값이 0000으로 표시됩니다.
+        </p>
+        <div class="tbl_wrap">
+            <table>
+                <caption>처리 결과</caption>
+                <colgroup>
+                    <col style="width:30%">
+                    <col style="width:auto">
+                </colgroup>
+                <tr>
+                    <th>결과 메세지</th>
+                    <td>정상처리</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tbl_wrap">
+            <table>
+                <caption>주문 정보</caption>
+                <colgroup>
+                    <col style="width:30%">
+                    <col style="width:auto">
+                </colgroup>
+                <tr>
+                    <th>주문 번호</th>
+                    <td>2021102421456</td>
+                </tr>
+                <tr>
+                    <th>결제 금액</th>
+                    <td>₩ 10,000원</td>
+                </tr>
+                <tr>
+                    <th>상 품 명</th>
+                    <td>성수 승인확인</td>
+                </tr>
+                <tr>
+                    <th>주문자명</th>
+                    <td>박성태</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tbl_wrap">
+            <table>
+                <caption>신용카드 정보</caption>
+                <colgroup>
+                    <col style="width:30%">
+                    <col style="width:auto">
+                </colgroup>
+                <tr>
+                    <th>결제 수단</th>
+                    <td>신용카드</td>
+                </tr>
+                <tr>
+                    <th>승인 시간</th>
+                    <td>202111234561</td>
+                </tr>
+                <tr>
+                    <th>승인 번호</th>
+                    <td>36372643</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="fixed_btn two">
+        <a href="./class_list_01_01.html" class="btn1 co2">메인으로</a>
+    </div>
+</body>
+</html>
