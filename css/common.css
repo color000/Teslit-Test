@@ -48,6 +48,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .Questrial {font-family: 'Questrial' !important;}
 
 .wrap {position:relative;  height:100%; min-height:100vh; background:radial-gradient(99% 99% at 50% 1%, #131245 0%, #060510 100%); overflow:hidden;}
+.wrap {    
+    padding-right:constant(safe-area-inset-right);
+    padding-left:constant(safe-area-inset-left);
+    padding-right:env(safe-area-inset-right);
+    padding-left:env(safe-area-inset-left);
+    margin-top: env(safe-area-inset-top);
+    margin-bottom: env(safe-area-inset-bottom);
+    margin-top: constant(safe-area-inset-top);
+    margin-bottom: constant(safe-area-inset-bottom);
+}
 
 /* 위로 올라가는 버튼 */
 .up_btn_wrap {display: none; position: fixed; z-index: 999; bottom:70px; right:20px; background: #0D0C2C; border-radius: 50%; box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.149);}
